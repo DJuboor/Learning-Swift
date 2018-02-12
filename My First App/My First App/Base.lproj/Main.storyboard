@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_First_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="MainWindow">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaB-1i-jKJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your cat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dp-Tu-zkg">
+                                <rect key="frame" x="0.0" y="65" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter An Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPd-vn-A8z">
+                                <rect key="frame" x="0.0" y="271" width="375" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="nbg-ze-LiF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qmZ-Wq-nnK">
+                                <rect key="frame" x="130" y="111" width="115" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pj-he-oNE">
+                                <rect key="frame" x="130" y="191" width="115" height="30"/>
+                                <color key="backgroundColor" red="0.44964248206888835" green="0.52687038261605634" blue="0.77918781725888331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Get Age">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLi-5G-al1"/>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJm-s4-P9e"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="47b382ca17da2e498642d0d0a47313f311f7ed7b8af5d60b0751d25863cb9842.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mFS-KW-tWp">
+                                <rect key="frame" x="63" y="371" width="249" height="267"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gPd-vn-A8z" firstAttribute="leading" secondItem="UaB-1i-jKJ" secondAttribute="leading" id="18w-Tj-e96"/>
+                            <constraint firstItem="UaB-1i-jKJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Gx-fX-AAH"/>
+                            <constraint firstItem="gPd-vn-A8z" firstAttribute="trailing" secondItem="4Dp-Tu-zkg" secondAttribute="trailing" id="3kx-L4-yKi"/>
+                            <constraint firstItem="mFS-KW-tWp" firstAttribute="top" secondItem="gPd-vn-A8z" secondAttribute="bottom" constant="64" id="KHe-3H-Rc7"/>
+                            <constraint firstItem="qmZ-Wq-nnK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="NPC-mX-Mzm"/>
+                            <constraint firstItem="gPd-vn-A8z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NWX-ag-geg"/>
+                            <constraint firstItem="gPd-vn-A8z" firstAttribute="centerX" secondItem="2pj-he-oNE" secondAttribute="centerX" id="W3b-JA-1CU"/>
+                            <constraint firstItem="2pj-he-oNE" firstAttribute="top" secondItem="qmZ-Wq-nnK" secondAttribute="bottom" constant="50" id="bOa-m9-LcA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2pj-he-oNE" secondAttribute="trailing" constant="130" id="bw7-Ta-IqC"/>
+                            <constraint firstItem="2pj-he-oNE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="diT-gb-Moj"/>
+                            <constraint firstItem="4Dp-Tu-zkg" firstAttribute="top" secondItem="UaB-1i-jKJ" secondAttribute="bottom" constant="10" id="fwQ-y3-iby"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qmZ-Wq-nnK" secondAttribute="trailing" constant="130" id="kdy-KM-WEC"/>
+                            <constraint firstItem="gPd-vn-A8z" firstAttribute="centerX" secondItem="mFS-KW-tWp" secondAttribute="centerX" id="reR-R8-k0e"/>
+                            <constraint firstItem="qmZ-Wq-nnK" firstAttribute="top" secondItem="4Dp-Tu-zkg" secondAttribute="bottom" constant="25" id="uI0-iv-kh4"/>
+                            <constraint firstItem="gPd-vn-A8z" firstAttribute="top" secondItem="2pj-he-oNE" secondAttribute="bottom" constant="50" id="vgS-r8-R4u"/>
+                            <constraint firstItem="gPd-vn-A8z" firstAttribute="leading" secondItem="4Dp-Tu-zkg" secondAttribute="leading" id="wSj-hM-iqx"/>
+                            <constraint firstItem="gPd-vn-A8z" firstAttribute="trailing" secondItem="UaB-1i-jKJ" secondAttribute="trailing" id="wfd-3W-htz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AgeInput" destination="qmZ-Wq-nnK" id="TOp-mK-Xnn"/>
+                        <outlet property="AgeOutput" destination="gPd-vn-A8z" id="ccD-fU-TiF"/>
+                        <outlet property="label" destination="8bC-Xf-vdC" id="8Ff-Et-uPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="47b382ca17da2e498642d0d0a47313f311f7ed7b8af5d60b0751d25863cb9842.jpg" width="625" height="833"/>
+    </resources>
+</document>
